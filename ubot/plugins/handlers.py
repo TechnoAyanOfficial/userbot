@@ -1,4 +1,5 @@
-from pyrogram import Client as uBot , Filters
+from pyrogram import Filters
+from ubot import uBot
 ALIVE = 'I am ALIVE sir .'
 @uBot.on_message(Filters.me & Filters.command('alive','.'))
 async def _alive(uBot,message):
